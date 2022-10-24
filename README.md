@@ -1,0 +1,1 @@
+Essa é uma pasta referente aos meus exercícios durante o aprendizado de HTML5 e CSS3.
