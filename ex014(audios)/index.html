@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproduzindo audios</title>
+</head>
+<body>
+    <h1>Reproduzindo audios</h1>
+    <p>usando a tag SOURCE dentro da tag AUDIO e o parâmetro CONTROLS para habilitar o player</p>
+    <audio controls autoplay preload="metadata">
+        <source src="audio/Zoom - Vibe Tracks.mp3" srcset="audio/mpeg">
+    </audio>
+    <p>outros parâmetros</p>
+    <ul>
+        <li>autoplay - iniciar a musica junto ao site (em alguns navegadores não funciona)</li>
+        <li>preload</li>
+            <ul>
+                <li>auto - só carrega o site depois de carregar o audio(não é recomendado)</li>
+                <li>metadata - só carrega informações básicas do arquivo(nome, duração)</li>
+                <li>none - não carrega nada</li>
+            </ul>
+        <li>loop - após terminar de reproduzir, o áudio vai recomeçar até que o usuário o pare</li>
+    </ul>
+    <h2>IMPORTANTE: Para melhor compatibilidade com navegadores é recomendado que faça o upload do arquivo nos 3 formatos, mp3, ogg e wav. Dessa forma, aumentam-se as chances de que o navegador seja compatível. É permitido e necessário por os 3 arquivos na mesma tag AUDIO, dessa forma o navegador vai testar os 3, na ordem colocada, e o que funcionar ele irá gerar no site.</h2>
+    <p>obs: arquivos .wav são MUITO pesados e não são recomendados para o site</p>
+    <p href="">site para conseguir áudios para teste : youtube> youtube studio> biblioteca de audios > atribuição não necessária</p>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Links externos</h1>
+    
+    <p>Você pode acessar o meu <a href="https://github.com/HerbertDuarte" target="_blank" rel="external">perfil no github</a></p>
+    <pre>
+        <p>
+para abrir em outra aba usar os parâmetros: 
+
+    <mark>target="_blank"</mark> e <mark> rel="external"</mark>
+        </p>
+    </pre>
+
+    <h1>Links internos</h1>
+
+    <p>Esta é a página principal do site <a href="pag2.html" rel="next">clique aqui</a> para ir para a página secundária</p>
+    <p><a href="noticias/pag3.html" rel="next">clique aqui</a> para ir até a página de notícias</p>
+    <small>obs: usar rel para indicar próxima (next) e anterior (prev) página</small>
+
+    <h1>Links para download</h1>
+
+    <ul>
+        <li><a href="imagem/drip.png" download>Download de imagem do dev</a></li>
+        <li><a href="imagem/drip.zip" download="imagem/drip.zip" type="application/zip">Download de imagem do dev em .zip</a></li>
+    </ul>
+
+    <p>usa-se para configurar um link de download, a tag A e os parâmetros download, href e type</p>
+    <p>para saber o type correto para o arquivo, podemos pesquisar pelo tipo do arquivo usando F3 no site <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">iana.org</a></p>
+    <p>obs: no caso do arquivo .png, usando o método acima o download é feito em .img. Para resolver retira-se o parâmetro type e é deixado o parâmetro download vazio sem o igual (=) e sem as aspas ("")</p>
+</body>
+</html>

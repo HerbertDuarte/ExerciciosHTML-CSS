@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+    <style>
+        p2{
+            font-size: larger;         
+        }
+    </style>
+</head>
+<body>
+    <h1>Prinicpais formtações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta frase temos um termo em <b>negrito/bold</b> usando a tag B (sem semântica) </p>
+    <p>Nesta frase temos um termo em <strong>negrito/bold</strong> usando a tag STRONG (com semântica) </p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase temos um termo em <i>itálico/italic</i> usando a tag I (sem semântica) </p>
+    <p>Nesta frase temos um termo em <em>itálico/italic</em> usando a tag EM (com semântica) </p> 
+    <br>
+    <p2><small>Obs: pode-se usar o <strong>ctrl=+shift+p</strong> e pesquisando por <strong>wrap with abbreviation</strong>, podemos envelopar uma parte do código com uma tag.</small></p2>
+    <h2>Texto sublinhads</h2>
+    <p>texto normal / <mark style="background-color:yellow;">texto sublinhado usando a tag mark</mark></p>
+    <h2>Texto grande e pequeno</h2>
+    <p><big>Exemplo de texto grande (obsoleto)</big></p>
+    <p><small>Exemplo de texto pequeno</small></p>
+    <h2>Texto deletado</h2>
+    <p><del>Exemplo de texto deletado usando a tag del</del>
+    </p>
+    <h2>Texto inserido</h2>
+    <p>Exemplo de <ins>texto inserido</ins> com semântica</p>
+    <p>Exemplo de <u>texto inserido</u> sem semântica</p>
+    <h2>Texto subscrito e sobrescrito</h2>
+    <p>Exemplo usando tag sup => 3<sup>2</sup> = 9</p>
+    <p>Exemplo usando tag sub => SO<sub>3</sub>H<sub>4</sub></p>
+
+    <h2>Texto em codigo com tag code e espaçamentos com tag pre</h2>
+    <p>Exemplo de code sem pre:</p>
+    <p><code>
+        name=str(input("What your name?"))
+        reply=(str(input("Hello {}. How are you?".format(nome)))) 
+        if(reply==yes):
+            print("That´s great!")
+        else:
+            print("That´s bad!")
+    </code></p>
+    <p>exemplo de code com pre:</p>
+    <p><pre><code>
+    name=str(input("What your name?"))
+    reply=(str(input("Hello {}. How are you?".format(nome)))) 
+    if(reply=="yes"):
+        print("That´s great!")
+    else:
+        print("That´s bad!")
+    </code></pre></p>
+
+    <h2>Citação em textos com semântica</h2>
+    <h3>citação simples com tag q:</h3>
+    <p>Como diria o pai de um amigo : <q>O computador é um burro mais rápido.</q></p>
+    <h3>Citação de bloco com tag blockquote:</h3>
+    <p>Segundo o sociólogo polonês Zygmount Bauman:</p>
+    <blockquote cite="https://rabiscodahistoria.com/zygmunt-bauman/#:~:text=%E2%80%9CInstitui%C3%A7%C3%B5es%20zumbis%E2%80%9D%20%C3%A9%20a%20defini%C3%A7%C3%A3o,com%20o%20Estado%2C%20por%20exemplo.">
+        "As instituições zumbis são aquelas que estão presentes na sociedade, no entanto sem excercer com eficiencia seu papel social."
+    </blockquote>
+    <p><small>obs: o parâmetro cite no blockquote ajuda os mecanismos de busca à interligarem o link ao site, porém não faz alterações visuais na citação</small></p>
+    <h2>Abreviações com tag abbr</h2>
+    <p>Ex: Dados retirados do <abbr title="Instituto Brasileiro de Geografia e Estatística">IBGE</abbr></p>
+</body>
+</html>

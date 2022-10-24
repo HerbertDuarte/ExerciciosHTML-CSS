@@ -1,0 +1,12 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  margin-top: 15px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: aliceblue;
+}
