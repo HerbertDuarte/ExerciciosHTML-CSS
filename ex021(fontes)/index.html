@@ -1,0 +1,63 @@
+<html lang="pt-br"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manipulando fontes em html e css</title>
+  <style>
+    @font-face {
+      font-family:'cafe';
+      src: url('Louis George Cafe.ttf') format(truetype), url('Louis George cafe.ttf') format(opentype);
+      font-weight:normal;
+      font-style:normal;
+    }
+    .font{
+      font-family:'cafe';
+    }
+  </style>
+</head>
+<body>
+  <h1>Fontes e caracteres</h1>
+  <h2 style="font-family:'Times New Roman', Times, serif;">Lorem com fontes serifadas (Times New Roman, Times, serif)</h2>
+  <p style="font-family:'Times New Roman', Times, serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis aperiam inventore aliquid vel quas dolore odio quidem quod illum, illo molestiae nam suscipit ipsum quos possimus libero cum ex dolorum.</p>
+  <h2 style="font-family:Arial, Helvetica, sans-serif;">Lorem com fontes sem serif (Arial, Helvetica, sans-serif)</h2>
+  <p style="font-family:Arial, Helvetica, sans-serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis aperiam inventore aliquid vel quas dolore odio quidem quod illum, illo molestiae nam suscipit ipsum quos possimus libero cum ex dolorum.</p>
+  <h2 style="font-family:monospace;">Lorem com fontes monoespaçadas (monospace)</h2>
+  <p style="font-family:monospace;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis aperiam inventore aliquid vel quas dolore odio quidem quod illum, illo molestiae nam suscipit ipsum quos possimus libero cum ex dolorum.</p>
+  
+  <h1>Fontes externas</h1>
+  <h2>Usa-se no arquivo de estilo do css o objetivo</h2>
+<code>
+  <pre>    @font-face {
+      font-family:'cafe';
+      src: url('fonts/Louis George Cafe.ttf') format(truetype), url('fonts/Louis George cafe.ttf') format(opentype);
+      font-weight:normal;
+      font-style:normal;
+    }
+  </pre>
+</code>
+<h3>tipos de format()</h3>
+<ul>
+  <li>opentype(otf)</li>
+  <li>truetype(ttf)</li>
+  <li>embedded-opentype</li>
+  <li>truetype-aat (apple advanced typography)</li>
+  <li>avg</li>
+</ul>
+  <h1>Peso da fontes</h1>
+  <h2>Tag style -&gt; font-weight (100 - 900)</h2>
+  <p>algumas fontes não possuem todos os weights</p>
+  <p class="font" style="font-weight:normal ;">NORMAL</p>
+  <p class="font" style="font-weight:lighter ;">LIGHTER</p>
+  <p class="font" style="font-weight: bold;">BOLD</p>
+  <p class="font" style="font-weight:bolder ;">BOLDER</p>
+  <h1>Estilos de fontes</h1>
+  <h2>Tag font-style</h2>
+  <h3>Ex:</h3>
+  <p style="font-style: italic;">Italico</p>
+  <h2>Tag text-decoration</h2>
+  <h3>Ex:</h3>
+  <p style="text-decoration:underline;">sublinhado</p>
+  <h2>SHORTHAND na tag FONT</h2>
+  <p style="font:italic bolder 2em 'cafe'">Ordem : font-style -&gt; font-weight -&gt; font-size -&gt; font-family</p>
+
+</body></html>
