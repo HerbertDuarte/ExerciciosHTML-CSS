@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudoclasses</title>
+  <style>
+    .div1{
+      display: inline-block;
+      background-color: lightgrey;
+      height: 200px;
+      width: 200px;
+      text-align: center;
+      border: 1px solid #000;
+    }
+    #d1:hover{
+      background-color: pink;
+    }
+    #d2:hover{
+      background-color: violet;
+    }
+    #d3:hover{
+      background-color: lightsalmon;
+    }
+    #texto{
+      color: #000; 
+      width: max-content;
+    }
+    #texto > p{
+      display: none;
+      background-color: red;
+      color: #fff;
+      width: max-content;
+    }
+    #texto:hover > p{
+      display: block;
+    }
+    #texto:hover{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+    <div class="div1" id="d1">01</div>
+    <div class="div1" id="d2">02</div>
+    <div class="div1" id="d3">03</div>
+
+    <h1>Pseudoclasses (:)</h1>
+    <p>Hover : quando o mouse esiver em cima do objeto</p>
+    <p>Active : quando o objeto estiver ativo</p>
+    <p>Checked : quando o objeto estiver marcado (checkbox, radiobutton)</p>
+    <p>Visited : quando o usuário já visitou um link de TAG A</p>
+
+    <small>Obs: pode-se usar o > para se referir às tags filhas </small>
+
+    <h1>PseudoElementos (::)</h1>
+    <p>After - tudo que acontece depois do objeto</p>
+    <p>Before - tudo que acontece antes do objeto</p>
+
+    <small>Usando o content com e o conteudo entre aspas simples, é possivel inserir textos e talvez midias nesses pseudoelementos</small>
+
+    <h1>Ex de HOVER</h1>
+
+    <div id="texto">
+      passe o mouse aqui
+      <p>Texto escondido</p>
+    </div>
+
+  </body>
+</html>

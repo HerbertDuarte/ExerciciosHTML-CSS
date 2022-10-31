@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalizando links</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    a{
+      color: darkblue;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:visited{
+      color: rgb(255, 0, 0);
+    }
+    a:hover{
+      color: aqua;
+      text-decoration: underline;
+    }
+    a:active{
+      color: darkgoldenrod;
+    }
+    a::after{
+      content: ' ✎';
+    }
+  </style>
+</head>
+<body>
+  <h1>Personalizando links</h1>
+  <ul>
+    <li><a target="_blank" rel="external" href="https://github.com/HerbertDuarte/ExerciciosHTML-CSS">Repositorio de exercícios</a></li>
+    <li><a target="_blank" rel="external" href="https://github.com/HerbertDuarte/portbia">Repositorio de site bia</a></li>
+    <li><a target="_blank" rel="external" href="https://www.linkedin.com/in/herbert-duarte-8534b71a2/">Perfil do LinkedIn</a></li> 
+    <li><a target="_blank" rel="external" href="https://www.instagram.com/herbert.14_/">Perfil do Instagram</a></li>
+  </ul>
+</body>
+</html>
