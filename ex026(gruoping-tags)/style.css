@@ -1,0 +1,41 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(58, 58, 58);
+    margin: 0px;
+}
+header{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+nav{
+    background-color: rgb(73, 73, 73);
+    padding: 3px;
+}
+nav > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+}
+nav > a:hover{
+    text-decoration: underline;
+}
+main{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+.noticias{
+    background-color: rgb(216, 216, 216);
+    padding: 5px;
+}
+aside{
+    background-color: rgb(167, 167, 167);
+}
+footer{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 4px;
+}
