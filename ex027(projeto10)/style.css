@@ -37,11 +37,13 @@ header{
 header > div > h1{
   padding: 10px;
   text-transform: uppercase;
-  font-size: 1.8em;
+  font-size: 2.5em;
+  font-family: 'Bebas Neue', cursive;
 }
 
 header > div > p{
   margin: 0 10px;
+  text-align: center;
 }
 
 nav{
