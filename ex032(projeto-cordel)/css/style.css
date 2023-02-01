@@ -20,6 +20,7 @@ header{
 
 header h1{
   font-size: 3em;
+  font-variant: small-caps;
 }
 
 header p{
@@ -32,17 +33,43 @@ header a{
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
-main{
-  max-width: 600px;
-  margin: auto;
-}
 
 section{
   text-align: start;
-  margin: 25px;
-  font-size: 1.2rem;
+  padding: 35px 25px;
+  font-size: 1.5em;
   font-family: 'Sriracha', cursive;
+  line-height: 2.7em;
 }
+
+#tela-1,
+#tela-5,
+#tela-3{
+  background-color: rgb(224, 220, 182);
+}
+
+#tela-2{
+  background-image: url('../imagens/background001.jpg');
+  color: white;
+}
+#tela-4{
+  background-image: url('../imagens/background002.jpg');
+}
+#tela-2,
+#tela-4{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+#bg-text{
+  background-color: rgba(211, 211, 211, 0.664);
+  display: inline-block;
+  padding: 5px;
+  margin: -5px;
+}
+
 
 footer,
 header{
@@ -50,5 +77,13 @@ header{
 }
 
 footer{
-  back
+  background-color: #000;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+}
+
+footer a{
+  color: #FBAE29;
+  text-decoration: none;
 }
