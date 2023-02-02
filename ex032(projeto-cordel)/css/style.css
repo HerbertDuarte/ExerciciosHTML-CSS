@@ -61,10 +61,11 @@ section{
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  box-shadow: inset 6px 6px 25px rgba(0, 0, 0, 0.541), inset -6px 6px 25px rgba(0, 0, 0, 0.452);
 }
 
 #bg-text{
-  background-color: rgba(211, 211, 211, 0.664);
+  background-color: rgba(224, 220, 182, 0.527);
   display: inline-block;
   padding: 5px;
   margin: -5px;
