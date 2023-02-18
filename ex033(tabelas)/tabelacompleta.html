@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela completa</title>
+  <style>
+    *{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    caption{
+      margin-bottom: 5px;
+    }
+    table{
+      border-collapse: collapse;
+    }
+    td, th{
+      font-size: 1.3em;
+      padding: 10px;
+      border: 1px solid black;
+    }
+    td{
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>Tabela Completa</caption>
+    <thead>
+      <tr>
+        <th scope="col">Grupo</th>
+        <th scope="col">Nomes</th>
+        <th scope="colgroup" colspan="3">Filmes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="rowgroup" rowspan="3">Mulheres</th>
+        <td>Nome</td>
+        <td>Filme</td>
+        <td>Filme</td>
+        <td>Filme</td>
+      </tr>
+      <tr>
+        <td>Nome</td>
+        <td>Filme</td>
+        <td>Filme</td>
+        <td>Filme</td>
+      </tr>
+      <tr>
+        <td>Nome</td>
+        <td>Filme</td>
+        <td>Filme</td>
+        <td>Filme</td>
+      </tr>
+      <tr>
+        <th scope="rowgroup" rowspan="3">Homens</th>
+        <td>Nome</td>
+        <td>Filme</td>
+        <td>Filme</td>
+        <td>Filme</td>
+      </tr>
+      <tr>
+        <td>Nome</td>
+        <td>Filme</td>
+        <td>Filme</td>
+        <td>Filme</td>
+      </tr>
+      <tr>
+        <td>Nome</td>
+        <td>Filme</td>
+        <td>Filme</td>
+        <td>Filme</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
